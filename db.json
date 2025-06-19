@@ -7,13 +7,6 @@
       "password": "admin",
       "role": "Admin",
       "createdAt": "2025-06-19"
-    },
-    {
-      "id": "2780",
-      "name": "leandra",
-      "email": "leandra@gmail.com",
-      "role": "Admin",
-      "createdAt": "2025-06-19"
     }
   ],
   "services": [
@@ -24,14 +17,6 @@
       "cost": 5000,
       "status": "Em Andamento",
       "client": "Empresa A"
-    },
-    {
-      "id": "606d",
-      "name": "Peidar",
-      "description": "peidar um pouco",
-      "cost": 399993,
-      "status": "Em Andamento",
-      "client": "Empresa B"
     }
   ]
 }
