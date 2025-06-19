@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# **Aplicação de Gerenciamento com React.js**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Descrição do Projeto**
 
-## Available Scripts
+Este é um projeto de aplicação web SPA (Single Page Application) construído com **React.js**. A aplicação simula um sistema de gerenciamento onde é possível controlar usuários e serviços. O objetivo principal foi criar uma interface de usuário funcional e agradável, com operações de CRUD (Criar, Ler, Atualizar e Excluir) completas, sistema de login e uma estrutura de código organizada.
 
-In the project directory, you can run:
+Para a persistência de dados, o projeto utiliza o **JSON Server**, que simula uma API RESTful completa, permitindo que o front-end realize requisições HTTP como se estivesse se comunicando com um backend real.
 
-### `npm start`
+## **✨ Funcionalidades**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - **Autenticação de Usuário:** Tela de login que valida as credenciais contra a API simulada.
+  - **Tratamento de Erros:** Exibição de mensagens de erro claras em caso de falha no login ou em outras operações.
+  - **Dashboard:** Página inicial após o login com um resumo dos dados do sistema (total de usuários e serviços).
+  - **Gerenciamento de Serviços (CRUD):**
+      - Listagem de todos os serviços.
+      - Criação de novos serviços através de um formulário.
+      - Edição de informações de serviços existentes.
+      - Exclusão de serviços com diálogo de confirmação.
+  - **Gerenciamento de Usuários (CRUD):**
+      - Listagem de todos os usuários do sistema.
+      - Criação de novos usuários.
+      - Edição de dados de usuários.
+      - Exclusão de usuários.
+  - **Layout Responsivo:** A interface se adapta a diferentes tamanhos de tela.
+  - **Navegação Protegida:** As rotas de gerenciamento são protegidas e só podem ser acessadas por usuários autenticados.
+  - **Componentes Reutilizáveis:** Estrutura com componentes como Navbar e Footer que se mantêm fixos em todas as telas, exceto no login.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **🛠️ Tecnologias Utilizadas**
 
-### `npm test`
+  - **Front-end:**
+      - [React.js](https://react.dev/)
+      - [React Router DOM](https://reactrouter.com/) (para navegação)
+      - [Axios](https://axios-http.com/) (para requisições HTTP)
+      - CSS puro para estilização.
+  - **Back-end (Simulado):**
+      - [JSON Server](https://github.com/typicode/json-server)
+  - **Ambiente de Desenvolvimento:**
+      - [Node.js](https://nodejs.org/)
+      - [npm](https://www.npmjs.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Pré-requisitos**
 
-### `npm run build`
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - [Node.js](https://nodejs.org/) (versão 16 ou superior)
+  - [npm](https://www.npmjs.com/) (geralmente vem com o Node.js)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **🚀 Instalação e Execução**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Siga os passos abaixo para rodar o projeto localmente:
 
-### `npm run eject`
+1.  **Clone o repositório:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.  **Acesse o diretório do projeto:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  **Instale as dependências:**
 
-## Learn More
+    ```bash
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4.  **Inicie o Servidor da API (JSON Server):**
+    Abra um terminal e execute o seguinte comando. O backend simulado estará disponível em `http://localhost:3001`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm run server
+    ```
 
-### Code Splitting
+5.  **Inicie a Aplicação React:**
+    **Em um novo terminal**, execute o comando abaixo. A aplicação estará disponível em `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm start
+    ```
 
-### Analyzing the Bundle Size
+## **🔑 Credenciais de Acesso**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para acessar o sistema, utilize as credenciais padrão definidas no arquivo `db.json`:
 
-### Making a Progressive Web App
+  - **Email:** `admin@empresa.com`
+  - **Senha:** `admin`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## **📁 Estrutura de Pastas**
 
-### Advanced Configuration
+O projeto está organizado da seguinte forma:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+minha-app-gerenciamento/
+├── public/
+├── src/
+│   ├── components/       # Componentes reutilizáveis (Navbar, Footer)
+│   ├── context/          # Contexto de autenticação
+│   ├── pages/            # Componentes de página e CRUDs
+│   ├── services/         # Configuração do Axios (se houver)
+│   ├── App.css           # Estilos globais
+│   ├── App.js            # Componente principal e rotas
+│   └── index.js          # Ponto de entrada da aplicação
+├── .gitignore
+├── db.json               # Banco de dados simulado
+├── package.json
+└── README.md
