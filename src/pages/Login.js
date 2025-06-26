@@ -17,23 +17,21 @@ const Login = () => {
             const response = await axios.get(`http://localhost:3001/users?email=${email}&password=${password}`);
 
             if (response.data.length > 0) {
-                // Login bem-sucedido
+
                 login(response.data[0]);
             } else {
-                // Credenciais inválidas
                 setError('E-mail ou senha inválidos.');
             }
         } catch (err) {
-            // e. Erro na requisição HTTP
-            setError('Falha ao tentar fazer login. Tente novamente mais tarde.');
-            console.error('Erro de login:', err);
+                setError('Falha ao tentar fazer login. Tente novamente mais tarde.');
+                console.error('Erro de login:', err);
         }
     };
 
     return (
         <div className="login-container">
             <form className="login-form" onSubmit={handleLogin}>
-                <h2>Login do Sistema</h2>
+                <h2>Login</h2>
                 <div className="input-group">
                     <label htmlFor="email">Email</label>
                     <input

@@ -7,14 +7,22 @@
       "password": "admin",
       "role": "Admin",
       "createdAt": "2025-06-19"
+    },
+    {
+      "id": "d67a",
+      "name": "samuel",
+      "email": "samuel@gmail.com",
+      "password": "samuel",
+      "role": "User",
+      "createdAt": "2025-06-25"
     }
   ],
   "services": [
     {
-      "id": "1",
-      "name": "Desenvolvimento de Website",
-      "description": "Criação de um website institucional responsivo.",
-      "cost": 5000,
+      "id": "61f1",
+      "name": "teste",
+      "description": "teste ",
+      "cost": 400,
       "status": "Em Andamento",
       "client": "Empresa A"
     }

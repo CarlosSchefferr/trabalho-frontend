@@ -29,15 +29,15 @@ const ServiceForm = ({ service, refreshList, closeForm }) => {
 
         const dataToSubmit = {
             ...formData,
-            cost: parseFloat(formData.cost) // Garante que o custo seja um número
+            cost: parseFloat(formData.cost)
         };
 
         try {
             if (service && service.id) {
-                // (PUT)
+
                 await axios.put(`http://localhost:3001/services/${service.id}`, dataToSubmit);
             } else {
-                // (POST)
+
                 await axios.post('http://localhost:3001/services', dataToSubmit);
             }
             refreshList();

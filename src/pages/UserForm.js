@@ -14,7 +14,7 @@ const UserForm = ({ user, refreshList, closeForm }) => {
 
     useEffect(() => {
         if (user) {
-            setFormData({ ...user, password: '' }); // Limpa a senha por segurança
+            setFormData({ ...user, password: '' });
         }
     }, [user]);
 
@@ -28,7 +28,6 @@ const UserForm = ({ user, refreshList, closeForm }) => {
         setError('');
 
         if (user && !formData.password) {
-            // Se estiver editando e a senha estiver vazia, não a altere
             delete formData.password;
         }
 

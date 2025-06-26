@@ -9,13 +9,13 @@ import ServiceList from './pages/ServiceList';
 import UserList from './pages/UserList'; 
 import './App.css';
 
-// Componente para proteger rotas
+// Proteger rotas
 const PrivateRoute = ({ children }) => {
     const { isAuthenticated } = useContext(AuthContext);
     return isAuthenticated ? children : <Navigate to="/login" />;
 };
 
-// Componente para gerenciar o layout
+// Gerenciar o layout
 const AppLayout = () => {
     const location = useLocation();
     const noLayoutRoutes = ['/login'];

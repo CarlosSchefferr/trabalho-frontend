@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Mantém o usuário logado se a página for recarregada
+
         const loggedUser = localStorage.getItem('user');
         if (loggedUser) {
             setUser(JSON.parse(loggedUser));

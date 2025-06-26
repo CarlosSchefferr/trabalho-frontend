@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Projeto Front-End. Todos os direitos reservados.</p>
         </footer>
     );
 };

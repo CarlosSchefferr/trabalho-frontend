@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Dashboard.css'; // Estilo para o dashboard
+import './Dashboard.css';
 
 const Dashboard = () => {
     const [userCount, setUserCount] = useState(0);
@@ -10,7 +10,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchDataSummary = async () => {
             try {
-                // e. Tratamento de exceções (try/catch)
+
                 const usersResponse = await axios.get('http://localhost:3001/users');
                 setUserCount(usersResponse.data.length);
 
